@@ -11,6 +11,6 @@ jobs:
       - name: Fast-forward merge
         uses: endre-spotlab/fast-forward-js-action@2.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
           success_message: "Código propagado correctamente"
           failure_message: "No se pudo propagar el código"
