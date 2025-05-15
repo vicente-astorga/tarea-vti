@@ -1,0 +1,16 @@
+name: Fast Forward PR
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  ff:
+    if: ${{ github.event.comment.body == '/ff' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fast-forward merge
+        uses: endre-spotlab/fast-forward-pr@v2.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          success_message: "Código propagado correctamente"
+          failure_message: "No se pudo propagar el código"
