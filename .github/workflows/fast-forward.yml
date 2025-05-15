@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Fast-forward merge
-        uses: endre-spotlab/fast-forward-pr@v2.1
+        uses: endre-spotlab/fast-forward-js-action@2.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           success_message: "Código propagado correctamente"
