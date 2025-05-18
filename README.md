@@ -52,3 +52,6 @@ Este permite propagar automáticamente cambios a la rama main (si el historial p
 
 - Los test se ejecutan automáticamente cuando hay un push o pull request dirigido a **main**.
 - La rama default del proyecto es **main**
+
+## Extra
+Se adjunta un anexo visual en PDF con imágenes de la ejecución.
